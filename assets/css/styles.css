@@ -580,3 +580,407 @@ footer {
 .nav-overlay {
     display: none;
 }
+/* ==================== HISTORY PAGE SPECIFIC STYLES ==================== */
+
+/* History Hero Section */
+.history-hero {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(10, 92, 54, 0.85), rgba(10, 92, 54, 0.7)),
+        url('../../images/history-banner.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding-top: 80px;
+    position: relative;
+    min-height: 600px;
+}
+
+.history-hero-content {
+    max-width: 900px;
+    padding: 3rem;
+}
+
+.history-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.history-hero p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    font-weight: 300;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 5rem 0;
+    background-color: var(--cream);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--tree-brown);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 60px;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 60px;
+}
+
+.timeline-content {
+    padding: 2rem;
+    background-color: var(--light-brown);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-year {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--tree-brown);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--pine-green);
+}
+
+.timeline-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--medium-gray);
+}
+
+.timeline-image {
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.timeline-image img:hover {
+    transform: scale(1.03);
+}
+
+.timeline-item:nth-child(odd) .timeline-content:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: var(--light-brown);
+    top: 40px;
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(even) .timeline-content:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    background-color: var(--light-brown);
+    top: 40px;
+    transform: rotate(45deg);
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-marker {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--pine-green);
+    border: 4px solid var(--tree-brown);
+    top: 40px;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-marker {
+    right: -12.5px;
+}
+
+.timeline-item:nth-child(even) .timeline-marker {
+    left: -12.5px;
+}
+
+/* Transcendentalist Section */
+.transcendentalist-section {
+    background-color: var(--pine-green);
+    color: var(--white);
+}
+
+.transcendentalist-section .section-title h2 {
+    color: var(--white);
+}
+
+.transcendentalist-section .section-title h2:after {
+    background-color: var(--sky-blue);
+}
+
+.transcendentalist-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.transcendentalist-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.transcendentalist-quote {
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 3rem auto;
+    max-width: 700px;
+    color: var(--sky-blue);
+    font-family: var(--font-heading);
+    border-left: 3px solid var(--sky-blue);
+    padding-left: 2rem;
+}
+
+/* Appeal Section (on history page) */
+.appeal-section {
+    background-color: var(--tree-brown);
+    color: var(--white);
+}
+
+.appeal-section .section-title h2 {
+    color: var(--white);
+}
+
+.appeal-section .section-title h2:after {
+    background-color: var(--white);
+}
+
+.appeal-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.appeal-text {
+    flex: 1.2;
+}
+
+.appeal-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.appeal-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--deep-shadow);
+    border: 8px solid rgba(255, 255, 255, 0.1);
+}
+
+.appeal-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Era Sections */
+.era-section {
+    padding: 5rem 0;
+}
+
+.era-section:nth-child(odd) {
+    background-color: var(--light-brown);
+}
+
+.era-section:nth-child(even) {
+    background-color: var(--cream);
+}
+
+.era-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.era-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.era-text {
+    flex: 1.2;
+}
+
+.era-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    line-height: 1.8;
+}
+
+.era-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--deep-shadow);
+    transition: transform 0.5s ease;
+}
+
+.era-image:hover {
+    transform: translateY(-10px);
+}
+
+.era-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Historic Sites Section */
+.sites-section {
+    background-color: var(--pine-green);
+    color: var(--white);
+}
+
+.sites-section .section-title h2 {
+    color: var(--white);
+}
+
+.sites-section .section-title h2:after {
+    background-color: var(--sky-blue);
+}
+
+.sites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.site-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.site-card:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.site-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.site-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.site-card:hover .site-image img {
+    transform: scale(1.05);
+}
+
+.site-info {
+    padding: 2rem;
+}
+
+.site-info h3 {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.site-info p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.site-details {
+    list-style: none;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.site-details li {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.site-details i {
+    margin-right: 0.5rem;
+    color: var(--sky-blue);
+}
