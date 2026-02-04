@@ -220,3 +220,111 @@
         padding: 2rem;
     }
 }
+/* ==================== HISTORY PAGE RESPONSIVE ==================== */
+
+@media (max-width: 992px) {
+    .era-content, .appeal-content {
+        flex-direction: column;
+    }
+    
+    .era-image, .appeal-image {
+        order: -1;
+    }
+    
+    .history-hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .timeline:before {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 20px;
+        left: 0 !important;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content:after,
+    .timeline-item:nth-child(even) .timeline-content:after {
+        left: -10px;
+        right: auto;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-marker,
+    .timeline-item:nth-child(even) .timeline-marker {
+        left: 18.5px;
+        right: auto;
+    }
+    
+    .history-hero {
+        padding-top: 70px;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-hero h1 {
+        font-size: 2.4rem;
+    }
+    
+    .history-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .timeline-item {
+        padding-left: 70px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-marker,
+    .timeline-item:nth-child(even) .timeline-marker {
+        left: 8.5px;
+    }
+    
+    .transcendentalist-quote {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+    }
+    
+    .sites-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .history-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .history-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-item {
+        padding-left: 60px;
+        padding-right: 15px;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    
+    .transcendentalist-quote {
+        font-size: 1.1rem;
+        padding-left: 1rem;
+    }
+    
+    .site-info {
+        padding: 1.5rem;
+    }
+    
+    .history-hero {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .history-hero-content {
+        padding: 2rem;
+    }
+}
